@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #2575fc;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .search-bar {
+            margin-bottom: 40px;
+        }
+
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .books {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .book-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .book-card h3 {
+            margin-bottom: 10px;
+            color: #2575fc;
+        }
+
+        .book-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .books {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .search-bar input {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Library</h1>
+        <p>Discover, read, and enjoy your favorite books online!</p>
+    </header>
+
+    <nav>
+        <a href="#books">Books</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="books">
+        <h2>Books Collection</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search books...">
+        </div>
+        <div class="books">
+            <div class="book-card">
+                <h3>The Great Gatsby</h3>
+                <p>Author: F. Scott Fitzgerald</p>
+                <p>Category: Fiction</p>
+            </div>
+            <div class="book-card">
+                <h3>Learning Python</h3>
+                <p>Author: Mark Lutz</p>
+                <p>Category: Programming</p>
+            </div>
+            <div class="book-card">
+                <h3>Harry Potter</h3>
+                <p>Author: J.K. Rowling</p>
+                <p>Category: Fantasy</p>
+            </div>
+            <div class="book-card">
+                <h3>Data Science Handbook</h3>
+                <p>Author: Jake VanderPlas</p>
+                <p>Category: Data Science</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@onlinelibrary.com</p>
+        <p>Phone: +94 77 123 4567</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Online Library. All rights reserved.
+    </footer>
+</body>
+</html>
