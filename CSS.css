@@ -1,0 +1,47 @@
+.navbar{
+	background:darkblue;
+	color: white;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.nav-link{
+	display: flex;
+	gap: 1rem;
+}
+
+.nav-link a{
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	font-size: 30px;
+}
+
+.brand{
+	color: white;
+	text-decoration: none;
+	font-size: 40px;
+}
+
+.as{
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-link a:hover{
+	text-decoration: underline;
+}
+
+
+fieldset{
+	margin: auto;
+	text-align: center;
+	width: 200px;
+}
+
+.legend{
+	color: red;
+}
+
